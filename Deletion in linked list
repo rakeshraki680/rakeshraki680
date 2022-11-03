@@ -1,0 +1,23 @@
+# deletion in linked list
+import collections
+from os import remove
+linked_lst = collections.deque()
+ 
+linked_lst.append('10')
+linked_lst.append('20')
+linked_lst.append('30')
+linked_lst.append('40')
+
+print("elements in the linked_list:\n",linked_lst)
+
+#  beginning of the delition
+linked_lst.remove('10')
+print("\nelements in the linked list after deletion at beginnig :\n",linked_lst)
+
+#  middle of the delition
+linked_lst.remove('30')
+print("\nelements in the linked list after deletion at middle :\n",linked_lst)
+
+# end of delition 
+linked_lst.remove('40')
+print("\nelements in the linked list after deletion at end :\n ",linked_lst,)
